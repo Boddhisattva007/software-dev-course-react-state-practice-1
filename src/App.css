@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+button {
+  font: inherit;
+}
+
+.app {
+  width: min(700px, 90%);
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+}
+
+.genre-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.genre-button {
+  padding: 10px 16px;
+  border: 2px solid #315a8a;
+  border-radius: 6px;
+  background-color: white;
+  color: #315a8a;
+  cursor: pointer;
+}
+
+.genre-button:hover,
+.genre-button:focus-visible {
+  background-color: #e6f0fa;
+}
+
+.genre-button.selected {
+  background-color: #315a8a;
+  color: white;
+}
+
+.instructions {
+  margin-top: 24px;
+}
+
+.movie-section {
+  margin-top: 24px;
+}
+
+.movie-list {
+  padding: 0;
+  list-style: none;
+}
+
+.movie-card {
+  margin-bottom: 10px;
+  padding: 12px;
+  background-color: #edf2f7;
+  border-radius: 5px;
+}
+
+.error-message {
+  margin-top: 24px;
+  color: #a00000;
+  font-weight: bold;
+}
